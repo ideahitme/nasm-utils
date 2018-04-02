@@ -1,4 +1,4 @@
-%include "str.asm"
+%include "print/str.asm"
 
 section .bss
 	printData resb 100

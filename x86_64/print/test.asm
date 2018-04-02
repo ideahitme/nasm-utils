@@ -1,5 +1,5 @@
-%include "int.asm"
-%include "str.asm"
+%include "print/int.asm"
+%include "print/str.asm"
 
 %macro exit 0
 	mov rax, 60

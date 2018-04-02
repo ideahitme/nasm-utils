@@ -1,4 +1,4 @@
-%include "../print/str.asm"
+%include "print/str.asm"
 %ifndef X86_64_UNIT_TEST_FAIL
 %define X86_64_UNIT_TEST_FAIL
 

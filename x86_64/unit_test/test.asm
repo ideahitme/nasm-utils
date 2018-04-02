@@ -1,4 +1,5 @@
-%include "fail.asm"
+%include "unit_test/fail.asm"
+%include "unit_test/assert.asm"
 
 section .data
 	FAIL db "Fail!!", 10
@@ -8,4 +9,7 @@ section .text
 	global _start
 
 _start:
-	fail FAIL, FAIL_LEN 
+	assert_equal 1, 2 
+	mov rax, 60
+	mov rdi, 0
+	syscall
