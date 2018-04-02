@@ -28,7 +28,7 @@ section .bss
 
 %%print_reverse:
 	mov rcx, [printDataPtr]
-	print_str rcx, 1
+	print_str rcx, 1, 1
 	mov rcx, [printDataPtr] ; something is wrong here 
 	dec rcx
 	mov [printDataPtr], rcx
